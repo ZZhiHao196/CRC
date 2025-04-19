@@ -1,0 +1,113 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "编译Verilog",
+            "type": "shell",
+            "command": "iverilog",
+            "args": [
+                "-I${workspaceFolder}/rtl_model/settings",
+                "-I${workspaceFolder}/rtl_model/src",
+                "-o",
+                "${workspaceFolder}/rtl_model/sim/crc_sim.out",
+                "${workspaceFolder}/rtl_model/sim/crc_tb.v"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "运行仿真",
+            "type": "shell",
+            "command": "vvp",
+            "args": [
+                "${workspaceFolder}/rtl_model/sim/crc_sim.out"
+            ],
+            "group": "test",
+            "dependsOn": "编译Verilog",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "查看波形",
+            "type": "shell",
+            "command": "gtkwave",
+            "args": [
+                "${workspaceFolder}/rtl_model/sim/crc_test.vcd"
+            ],
+            "group": "test",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "一键仿真",
+            "type": "shell",
+            "command": "echo",
+            "args": ["RTL仿真完成！"],
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "编译Verilog",
+                "运行仿真"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "一键仿真并查看波形",
+            "type": "shell",
+            "command": "echo",
+            "args": ["仿真并打开波形查看器"],
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "编译Verilog",
+                "运行仿真",
+                "查看波形"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "生成测试数据",
+            "type": "shell",
+            "command": "${workspaceFolder}/generate_test_data.bat",
+            "group": "build",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "运行完整验证",
+            "type": "shell",
+            "command": "${workspaceFolder}/run_validation.bat",
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": []
+        }
+    ]
+} 

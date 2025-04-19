@@ -1,0 +1,113 @@
+$date
+	Sat Apr 19 20:13:14 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module crc_tb $end
+$var wire 1 ! crc_ready $end
+$var wire 16 " crc_out [15:0] $end
+$var reg 1 # clk $end
+$var reg 8 $ data_in [7:0] $end
+$var reg 1 % data_valid $end
+$var reg 800 & input_filename [800:1] $end
+$var reg 800 ' output_filename [800:1] $end
+$var reg 1 ( rst_n $end
+$var reg 1 ) start $end
+$var reg 1 * valid_test $end
+$var integer 32 + data_length [31:0] $end
+$var integer 32 , i [31:0] $end
+$var integer 32 - input_file [31:0] $end
+$var integer 32 . j [31:0] $end
+$var integer 32 / max_tests [31:0] $end
+$var integer 32 0 output_file [31:0] $end
+$var integer 32 1 scan_result [31:0] $end
+$scope module crc_inst $end
+$var wire 1 # clk $end
+$var wire 8 2 data_in [7:0] $end
+$var wire 1 % data_valid $end
+$var wire 1 ( rst_n $end
+$var wire 1 ) start $end
+$var wire 16 3 crc_next [15:0] $end
+$var parameter 32 4 bits $end
+$var parameter 32 5 init $end
+$var parameter 32 6 poly $end
+$var parameter 1 7 refin $end
+$var parameter 1 8 refout $end
+$var parameter 32 9 xorout $end
+$var reg 16 : crc_out [15:0] $end
+$var reg 1 ! crc_ready $end
+$var reg 16 ; crc_reg [15:0] $end
+$var reg 1 < data_processed $end
+$scope function reflect $end
+$var reg 16 = data [15:0] $end
+$var integer 32 > i [31:0] $end
+$upscope $end
+$scope module uut $end
+$var wire 8 ? byte_in [7:0] $end
+$var wire 16 @ crc_in [15:0] $end
+$var wire 1 A refin_in $end
+$var parameter 32 B bits $end
+$var parameter 32 C poly $end
+$var reg 8 D byte_reg [7:0] $end
+$var reg 16 E crc_out [15:0] $end
+$var reg 16 F crc_reg [15:0] $end
+$var integer 32 G i [31:0] $end
+$scope function reflect $end
+$var reg 8 H data [7:0] $end
+$var integer 32 I i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10111011010111011 C
+b10000 B
+b0 9
+08
+07
+b10111011010111011 6
+b1111111111111111 5
+b10000 4
+$end
+#0
+$dumpvars
+bx I
+bx H
+b1000 G
+bx00000000 F
+bx00000000 E
+bx D
+0A
+bx @
+bx ?
+bx >
+bx =
+x<
+bx ;
+bx :
+bx00000000 3
+bx 2
+bx 1
+bx 0
+b100 /
+bx .
+b0 -
+b101 ,
+bx +
+0*
+x)
+x(
+b1011100010111000101111001011100010111000101111011001000110000101110100011000010111001101100101011101000010111101010100011001010111001101110100010111110100110101101111011001000110010101101100001011110111001001110100011011000101111101100100011000010111010001100001001011110111010001100101011100110111010001011111011001000110000101110100011000010101111101100011001100010101111101110100001101000101111101101111011101010111010001110000011101010111010000101110011001000110000101110100 '
+b10111000101110001011110010111000101110001011110110010001100001011101000110000101110011011001010111010000101111010101000110010101110011011101000101111101001101011011110110010001100101011011000010111101101001011011100111000001110101011101000010111101110100011001010111001101110100010111110110010001100001011101000110000101011111011000110011000101011111011101000011010001011111011010010110111001110000011101010111010000101110011001000110000101110100 &
+x%
+bx $
+0#
+bx "
+x!
+$end

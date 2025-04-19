@@ -1,0 +1,170 @@
+{
+  "configs": {
+    "1": {
+      "width": 32,
+      "poly": "0x1e207f383",
+      "type": "hardware",
+      "reflection_type": "standard",
+      "rtl_config": "crc_config_1.vh"
+    },
+    "2": {
+      "width": 32,
+      "poly": "0x14d96321f",
+      "type": "hardware",
+      "reflection_type": "mixed_one",
+      "rtl_config": "crc_config_2.vh"
+    },
+    "3": {
+      "width": 8,
+      "poly": "0x17f",
+      "type": "hardware",
+      "reflection_type": "mixed_two",
+      "rtl_config": "crc_config_3.vh"
+    },
+    "4": {
+      "width": 32,
+      "poly": "0x1d95f0ba3",
+      "type": "hardware",
+      "reflection_type": "reflect",
+      "rtl_config": "crc_config_4.vh"
+    }
+  },
+  "test_data": [
+    {
+      "config_id": 1,
+      "config_type": "hardware",
+      "reflection_type": "standard",
+      "test_id": 1,
+      "length": 20,
+      "file": "test_data_c1_t1_input.dat"
+    },
+    {
+      "config_id": 1,
+      "config_type": "hardware",
+      "reflection_type": "standard",
+      "test_id": 2,
+      "length": 17,
+      "file": "test_data_c1_t2_input.dat"
+    },
+    {
+      "config_id": 1,
+      "config_type": "hardware",
+      "reflection_type": "standard",
+      "test_id": 3,
+      "length": 13,
+      "file": "test_data_c1_t3_input.dat"
+    },
+    {
+      "config_id": 1,
+      "config_type": "hardware",
+      "reflection_type": "standard",
+      "test_id": 4,
+      "length": 11,
+      "file": "test_data_c1_t4_input.dat"
+    },
+    {
+      "config_id": 2,
+      "config_type": "hardware",
+      "reflection_type": "mixed_one",
+      "test_id": 1,
+      "length": 11,
+      "file": "test_data_c2_t1_input.dat"
+    },
+    {
+      "config_id": 2,
+      "config_type": "hardware",
+      "reflection_type": "mixed_one",
+      "test_id": 2,
+      "length": 13,
+      "file": "test_data_c2_t2_input.dat"
+    },
+    {
+      "config_id": 2,
+      "config_type": "hardware",
+      "reflection_type": "mixed_one",
+      "test_id": 3,
+      "length": 11,
+      "file": "test_data_c2_t3_input.dat"
+    },
+    {
+      "config_id": 2,
+      "config_type": "hardware",
+      "reflection_type": "mixed_one",
+      "test_id": 4,
+      "length": 9,
+      "file": "test_data_c2_t4_input.dat"
+    },
+    {
+      "config_id": 3,
+      "config_type": "hardware",
+      "reflection_type": "mixed_two",
+      "test_id": 1,
+      "length": 9,
+      "file": "test_data_c3_t1_input.dat"
+    },
+    {
+      "config_id": 3,
+      "config_type": "hardware",
+      "reflection_type": "mixed_two",
+      "test_id": 2,
+      "length": 15,
+      "file": "test_data_c3_t2_input.dat"
+    },
+    {
+      "config_id": 3,
+      "config_type": "hardware",
+      "reflection_type": "mixed_two",
+      "test_id": 3,
+      "length": 14,
+      "file": "test_data_c3_t3_input.dat"
+    },
+    {
+      "config_id": 3,
+      "config_type": "hardware",
+      "reflection_type": "mixed_two",
+      "test_id": 4,
+      "length": 13,
+      "file": "test_data_c3_t4_input.dat"
+    },
+    {
+      "config_id": 4,
+      "config_type": "hardware",
+      "reflection_type": "reflect",
+      "test_id": 1,
+      "length": 8,
+      "file": "test_data_c4_t1_input.dat"
+    },
+    {
+      "config_id": 4,
+      "config_type": "hardware",
+      "reflection_type": "reflect",
+      "test_id": 2,
+      "length": 8,
+      "file": "test_data_c4_t2_input.dat"
+    },
+    {
+      "config_id": 4,
+      "config_type": "hardware",
+      "reflection_type": "reflect",
+      "test_id": 3,
+      "length": 5,
+      "file": "test_data_c4_t3_input.dat"
+    },
+    {
+      "config_id": 4,
+      "config_type": "hardware",
+      "reflection_type": "reflect",
+      "test_id": 4,
+      "length": 13,
+      "file": "test_data_c4_t4_input.dat"
+    }
+  ],
+  "total_configs": 4,
+  "total_tests": 16,
+  "config_types": [
+    "standard",
+    "mixed_one",
+    "mixed_two",
+    "reflect"
+  ]
+}

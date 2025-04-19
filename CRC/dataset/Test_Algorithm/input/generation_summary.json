@@ -1,0 +1,172 @@
+{
+  "configs": {
+    "1": {
+      "width": 8,
+      "poly": "0x18f",
+      "type": "software",
+      "python_config": "crc_config_1.json"
+    },
+    "2": {
+      "width": 16,
+      "poly": "0x1c1f9",
+      "type": "software",
+      "python_config": "crc_config_2.json"
+    },
+    "3": {
+      "width": 8,
+      "poly": "0x183",
+      "type": "software",
+      "python_config": "crc_config_3.json"
+    },
+    "4": {
+      "width": 8,
+      "poly": "0x1af",
+      "type": "software",
+      "python_config": "crc_config_4.json"
+    }
+  },
+  "test_data": [
+    {
+      "config_id": 1,
+      "config_type": "software",
+      "test_id": 1,
+      "length": 31,
+      "file": "test_data_c1_t1.dat"
+    },
+    {
+      "config_id": 1,
+      "config_type": "software",
+      "test_id": 2,
+      "length": 10,
+      "file": "test_data_c1_t2.dat"
+    },
+    {
+      "config_id": 1,
+      "config_type": "software",
+      "test_id": 3,
+      "length": 14,
+      "file": "test_data_c1_t3.dat"
+    },
+    {
+      "config_id": 1,
+      "config_type": "software",
+      "test_id": 4,
+      "length": 26,
+      "file": "test_data_c1_t4.dat"
+    },
+    {
+      "config_id": 1,
+      "config_type": "software",
+      "test_id": 5,
+      "length": 23,
+      "file": "test_data_c1_t5.dat"
+    },
+    {
+      "config_id": 2,
+      "config_type": "software",
+      "test_id": 1,
+      "length": 3,
+      "file": "test_data_c2_t1.dat"
+    },
+    {
+      "config_id": 2,
+      "config_type": "software",
+      "test_id": 2,
+      "length": 10,
+      "file": "test_data_c2_t2.dat"
+    },
+    {
+      "config_id": 2,
+      "config_type": "software",
+      "test_id": 3,
+      "length": 77,
+      "file": "test_data_c2_t3.dat"
+    },
+    {
+      "config_id": 2,
+      "config_type": "software",
+      "test_id": 4,
+      "length": 24,
+      "file": "test_data_c2_t4.dat"
+    },
+    {
+      "config_id": 2,
+      "config_type": "software",
+      "test_id": 5,
+      "length": 56,
+      "file": "test_data_c2_t5.dat"
+    },
+    {
+      "config_id": 3,
+      "config_type": "software",
+      "test_id": 1,
+      "length": 33,
+      "file": "test_data_c3_t1.dat"
+    },
+    {
+      "config_id": 3,
+      "config_type": "software",
+      "test_id": 2,
+      "length": 59,
+      "file": "test_data_c3_t2.dat"
+    },
+    {
+      "config_id": 3,
+      "config_type": "software",
+      "test_id": 3,
+      "length": 97,
+      "file": "test_data_c3_t3.dat"
+    },
+    {
+      "config_id": 3,
+      "config_type": "software",
+      "test_id": 4,
+      "length": 37,
+      "file": "test_data_c3_t4.dat"
+    },
+    {
+      "config_id": 3,
+      "config_type": "software",
+      "test_id": 5,
+      "length": 49,
+      "file": "test_data_c3_t5.dat"
+    },
+    {
+      "config_id": 4,
+      "config_type": "software",
+      "test_id": 1,
+      "length": 81,
+      "file": "test_data_c4_t1.dat"
+    },
+    {
+      "config_id": 4,
+      "config_type": "software",
+      "test_id": 2,
+      "length": 8,
+      "file": "test_data_c4_t2.dat"
+    },
+    {
+      "config_id": 4,
+      "config_type": "software",
+      "test_id": 3,
+      "length": 42,
+      "file": "test_data_c4_t3.dat"
+    },
+    {
+      "config_id": 4,
+      "config_type": "software",
+      "test_id": 4,
+      "length": 62,
+      "file": "test_data_c4_t4.dat"
+    },
+    {
+      "config_id": 4,
+      "config_type": "software",
+      "test_id": 5,
+      "length": 23,
+      "file": "test_data_c4_t5.dat"
+    }
+  ],
+  "total_configs": 4,
+  "total_tests": 20
+}
